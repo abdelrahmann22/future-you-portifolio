@@ -1,0 +1,10 @@
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let project of projects">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+    </div>
+  </div>
+</section>

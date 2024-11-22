@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" style="color: #4A90E2" href="#">Future You</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngFor="let link of navLinks">
+          <a class="nav-link" [href]="'#' + link.toLowerCase()">{{link}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

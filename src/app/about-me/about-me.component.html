@@ -1,0 +1,19 @@
+<section id="about" class="py-5" style="background-color: #f9f9f9">
+  <div class="container">
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h3 class="h4 mb-3">Skills & Expertise</h3>
+            <div class="mb-4">
+              <div class="mb-3" *ngFor="let skill of skills">
+                <app-skill-bar [skill]="skill"></app-skill-bar>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

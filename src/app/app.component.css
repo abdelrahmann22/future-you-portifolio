@@ -1,0 +1,41 @@
+:root {
+  --primary-blue: #4A90E2;
+  --accent-red: #D0021B;
+  --bg-light: #f9f9f9;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+}
+
+/* Custom Bootstrap overrides */
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+  background-color: darken(#4A90E2, 10%);
+  border-color: darken(#4A90E2, 10%);
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Skill badge hover effects */
+.skill-badge {
+  transition: transform 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: translateY(-2px);
+}
